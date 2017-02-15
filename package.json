@@ -1,0 +1,21 @@
+{
+  "name": "botkit-facebook-bot",
+  "version": "0.0.1",
+  "description": "Test Facebook bot with botkit",
+  "main": "app.js",
+  "repository": "git@github.com:sebacruz/facebook-bot.git",
+  "author": "Sebastian Cruz <cruzjesussebastian@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "node node_modules/.bin/xo"
+  },
+  "xo": {
+    "space": true,
+    "envs": [
+      "node"
+    ]
+  },
+  "dependencies": {
+    "xo": "^0.17.1"
+  }
+}
