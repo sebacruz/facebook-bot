@@ -7,15 +7,29 @@
   "author": "Sebastian Cruz <cruzjesussebastian@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "node node_modules/.bin/xo"
+    "test": "node node_modules/.bin/xo",
+    "start": "node app.js"
   },
   "xo": {
     "space": true,
     "envs": [
       "node"
-    ]
+    ],
+    "rules": {
+      "camelcase": [
+        "error",
+        {
+          "properties": "never"
+        }
+      ]
+    }
   },
   "dependencies": {
+    "body-parser": "^1.16.1",
+    "botkit": "^0.5.0",
+    "debug": "^2.6.1",
+    "express": "^4.14.1",
+    "request": "^2.79.0",
     "xo": "^0.17.1"
   }
 }
