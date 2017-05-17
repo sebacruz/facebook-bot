@@ -63,6 +63,18 @@ module.exports = (bot, message) => {
               payload: 'choice-siamese'
             }
           ]
+        },
+        {
+          title: 'Street cat',
+          subtitle: 'Makin\' his own rules!',
+          image_url: 'https://i.imgur.com/4Crzoc5.jpg',
+          buttons: [
+            {
+              type: 'postback',
+              title: 'Street!',
+              payload: 'choice-street-cat'
+            }
+          ]
         }
       ]
     }
