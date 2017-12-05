@@ -7,7 +7,7 @@
   "author": "Sebastian Cruz <cruzjesussebastian@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "test": "node node_modules/.bin/xo",
+    "test": "xo --fix",
     "start": "node app.js"
   },
   "xo": {

@@ -12,9 +12,9 @@ module.exports = (webserver, controller) => {
 
   webserver.get('/facebook/receive', (request, response) => {
     if (
-      request.query['hub.mode'] === 'subscribe' &&
-      request.query['hub.verify_token'] === controller.config.verify_token
-    ) {
+        request.query['hub.mode'] === 'subscribe' &&
+        request.query['hub.verify_token'] === controller.config.verify_token
+      ) {
       response.send(request.query['hub.challenge']);
     } else {
       response.status(400);
